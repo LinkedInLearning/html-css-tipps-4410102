@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inert</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        div {
+            border: 0.1rem solid blue;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        [inert],
+        [inert] * {
+            opacity: 0.5;
+            pointer-events: none;
+            cursor: default;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="button1">Button 1</label>
+        <button id="button1">normal</button>
+    </div>
+    <div inert>
+        <label for="button2">Button 2</label>
+        <button id="button2">mit inert</button>
+    </div>
+
+</body>
+
+</html>
