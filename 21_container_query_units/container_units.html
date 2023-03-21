@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Query Units</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            gap: 2rem;
+            max-inline-size: min(100% - 4rem, 70rem);
+            margin: auto;
+        }
+
+        @media screen and (max-width: 38em) {
+            body {
+                display: block;
+            }
+
+            body>* {
+                margin: 2rem;
+            }
+        }
+
+        .main,
+        .aside,
+        .header {
+            background: rgb(192, 236, 112);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            container-type: inline-size;
+        }
+
+        .header {
+            grid-column: span 2;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 6cqi, 5rem);
+            margin-block: 0.5em 0;
+        }
+
+        p {
+            margin-block-start: 0;
+            font-size: clamp(1rem, 6cqi, 2rem);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h2>h2 im header</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </header>
+    <main class="main">
+        <h2>h2 in main</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi delectus nemo, molestias totam nisi vel
+            impedit debitis at tempora omnis recusandae rerum alias expedita a dolorem, minus cupiditate culpa molestiae
+            suscipit? Obcaecati autem velit consectetur! Tempore quibusdam recusandae nostrum facere.</p>
+    </main>
+    <aside class="aside">
+        <h2>h2 in aside</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi delectus nemo, molestias totam nisi vel
+            impedit debitis at tempora omnis recusandae rerum alias expedita a dolorem, minus cupiditate culpa molestiae
+            suscipit? Obcaecati autem velit consectetur! Tempore quibusdam recusandae nostrum facere.</p>
+
+    </aside>
+
+</body>
+
+</html>
