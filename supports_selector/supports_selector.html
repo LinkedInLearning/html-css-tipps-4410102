@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@supports selector</title>
+    <style>
+        @supports (display: flow-root) {
+            .beispiel {
+                background: yellow;
+            }
+        }
+        @supports not (display: flow-root) {
+            .beispiel {
+                font-style: italic;
+            }
+        }
+        @supports selector(:has(p)) {
+            .beispiel {
+                border: 2px solid blue;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="beispiel">Beispiel</div>
+</body>
+</html>
