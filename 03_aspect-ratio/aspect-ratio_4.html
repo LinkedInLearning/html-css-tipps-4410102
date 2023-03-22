@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aspect-ratio - Beispiel</title>
+    <style>
+        .container {
+            display: flex;
+            font-family: sans-serif;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            max-width: 20rem;
+            margin: 1rem;
+            background-color: lightgoldenrodyellow;
+
+        }
+        .card__image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 1;
+           
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img class="card__image" src="images/bild_1.jpg" alt="Muscheln" width="378" height="504">
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="card">
+            <img class="card__image" src="images/bild_2.jpg" alt="Muscheln" height="378" width="504">
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
