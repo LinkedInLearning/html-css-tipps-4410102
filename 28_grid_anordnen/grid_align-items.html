@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>align-items</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font: 120% sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    section {
+      background: #ddd;
+      margin: 1em;
+      padding: 1em;
+    }
+
+    h1 {
+      font-size: 100%;
+    }
+
+    p {
+      color: #285a97;
+      box-shadow: 0px 0px 0.5px black;
+      margin: 0;
+    }
+
+    /* Grid */
+    div {
+      width: 200px;
+      height: 200px;
+      display: grid;
+      grid-template-columns: 80px 80px;
+      grid-template-rows: 80px 80px;
+      border: 3px solid #3f4f97;
+      background: white;
+    }
+
+    p:nth-child(1) {
+      background: #a9e8e3;
+    }
+
+    p:nth-child(2) {
+      background: #87c6c1;
+    }
+
+    p:nth-child(3) {
+      background: #6ca49f;
+      ;
+    }
+
+    p:nth-child(4) {
+      background: #4f7e79;
+      ;
+    }
+
+    .normal {
+      align-items: normal;
+    }
+
+    .start {
+      align-items: start;
+    }
+
+    .end {
+      align-items: end;
+    }
+
+    .center {
+      align-items: center;
+    }
+
+    .stretch {
+      align-items: stretch;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section>
+    <h1>align-items: normal</h1>
+    <div class="normal">
+      <p>Eins</p>
+      <p>Zwei</p>
+      <p>Drei</p>
+      <p>Vier</p>
+    </div>
+  </section>
+
+  <section>
+    <h1>align-items: start</h1>
+    <div class="start">
+      <p>Eins</p>
+      <p>Zwei</p>
+      <p>Drei</p>
+      <p>Vier</p>
+    </div>
+  </section>
+  <section>
+    <h1>align-items: end</h1>
+    <div class="end">
+      <p>Eins</p>
+      <p>Zwei</p>
+      <p>Drei</p>
+      <p>Vier</p>
+    </div>
+  </section>
+  <section>
+    <h1>align-items: center</h1>
+    <div class="center">
+      <p>Eins</p>
+      <p>Zwei</p>
+      <p>Drei</p>
+      <p>Vier</p>
+    </div>
+  </section>
+  <section>
+    <h1>align-items: stretch</h1>
+    <div class="stretch">
+      <p>Eins</p>
+      <p>Zwei</p>
+      <p>Drei</p>
+      <p>Vier</p>
+    </div>
+  </section>
+  <p style="clear:both"> normal ist wie stretch, außer bei Elementen, die inhärente Ausmaße haben, bei denen ist es
+    start.
+    Da dieses Verhalten noch nicht vollständig korrekt in den Browsern umgesetzt wird, ist es am besten, bei Bildern
+    o.Ä.
+    align-self: start; justify-self: start zu wählen. </p>
+
+
+</body>
+
+</html>

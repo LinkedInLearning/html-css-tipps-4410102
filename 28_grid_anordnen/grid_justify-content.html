@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>justify-content</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font: 120% sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    section {
+      background: #ddd;
+      margin: 1em;
+      padding: 1em;
+    }
+
+    h1 {
+      font-size: 100%;
+    }
+
+    p {
+      color: #285a97;
+      box-shadow: 0px 0px 0.5px black;
+      margin: 0;
+    }
+
+    /* Grid */
+    div {
+      width: 200px;
+      height: 200px;
+      display: grid;
+      grid-template-columns: 80px 80px;
+      grid-template-rows: 80px 80px;
+      border: 3px solid #3f4f97;
+      background: white;
+
+    }
+
+    p:nth-child(1) {
+      background: #a9e8e3;
+    }
+
+    p:nth-child(2) {
+      background: #87c6c1;
+    }
+
+    p:nth-child(3) {
+      background: #6ca49f;
+    }
+
+    p:nth-child(4) {
+      background: #4f7e79;
+    }
+
+    .normal {
+      justify-content: normal
+    }
+
+    .start {
+      justify-content: start;
+    }
+
+    .end {
+      justify-content: end;
+    }
+
+    .center {
+      justify-content: center;
+    }
+
+    .space-around {
+      justify-content: space-around;
+    }
+
+    .space-evenly {
+      justify-content: space-evenly;
+    }
+
+    .space-between {
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h1>justify-content: normal</h1>
+    <div class="normal">
+      <p>Eins</p>
+      <p>Zwei</p>
+      <p>Drei</p>
+      <p>Vier</p>
+    </div>
+  </section>
+
+  <section>
+    <h1>justify-content: start</h1>
+    <div class="start">
+      <p>Eins</p>
+      <p>Zwei</p>
+      <p>Drei</p>
+      <p>Vier</p>
+    </div>
+  </section>
+  <section>
+    <h1>justify-content: end</h1>
+    <div class="end">
+      <p>Eins</p>
+      <p>Zwei</p>
+      <p>Drei</p>
+      <p>Vier</p>
+    </div>
+  </section>
+  <section>
+    <h1>justify-content: center</h1>
+    <div class="center">
+      <p>Eins</p>
+      <p>Zwei</p>
+      <p>Drei</p>
+      <p>Vier</p>
+    </div>
+  </section>
+
+  <section>
+    <h1>justify-content: space-around</h1>
+    <div class="space-around">
+      <p>Eins</p>
+      <p>Zwei</p>
+      <p>Drei</p>
+      <p>Vier</p>
+    </div>
+  </section>
+  <section>
+    <h1>justify-content: space-between</h1>
+    <div class="space-between">
+      <p>Eins</p>
+      <p>Zwei</p>
+      <p>Drei</p>
+      <p>Vier</p>
+    </div>
+  </section>
+  <section>
+    <h1>justify-content: space-evenly</h1>
+    <div class="space-evenly">
+      <p>Eins</p>
+      <p>Zwei</p>
+      <p>Drei</p>
+      <p>Vier</p>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

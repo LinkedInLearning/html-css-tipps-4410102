@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place-*</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font: 120% sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section {
+            background: #ddd;
+            margin: 1em;
+            padding: 1em;
+            display: grid;
+            grid-template-rows: 6rem auto;
+        }
+
+        h1 {
+            font-size: 100%;
+        }
+
+        p {
+            color: #285a97;
+            box-shadow: 0px 0px 0.5px black;
+            margin: 0;
+        }
+
+        /* Grid */
+        div {
+            width: 200px;
+            height: 200px;
+            display: grid;
+            grid-template-columns: 80px 80px;
+            grid-template-rows: 80px 80px;
+            border: 3px solid #3f4f97;
+            background: white;
+
+        }
+
+        p:nth-child(1) {
+            background: #a9e8e3;
+        }
+
+        p:nth-child(2) {
+            background: #87c6c1;
+        }
+
+        p:nth-child(3) {
+            background: #6ca49f;
+        }
+
+        p:nth-child(4) {
+            background: #4f7e79;
+        }
+
+        .a {
+            align-content: center;
+            justify-content: end;
+        }
+
+        .b {
+            place-content: center end;
+        }
+
+        .c {
+            align-items: center;
+            justify-items: end;
+
+        }
+
+        .d {
+            place-items: center end;
+        }
+
+
+
+        .e> :last-child {
+            align-self: center;
+            justify-self: end;
+        }
+
+        .f> :last-child {
+            place-self: center end;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>align-content: center;<br>
+            justify-content: end;</h1>
+        <div class="a">
+            <p>Eins</p>
+            <p>Zwei</p>
+            <p>Drei</p>
+            <p>Vier</p>
+        </div>
+    </section>
+
+    <section>
+        <h1>place-content: center end;</h1>
+        <div class="b">
+            <p>Eins</p>
+            <p>Zwei</p>
+            <p>Drei</p>
+            <p>Vier</p>
+        </div>
+    </section>
+    <section>
+        <h1>align-items: center;<br>
+            justify-items: end;</h1>
+        <div class="c">
+            <p>Eins</p>
+            <p>Zwei</p>
+            <p>Drei</p>
+            <p>Vier</p>
+        </div>
+    </section>
+    <section>
+        <h1>place-items: center end;</h1>
+        <div class="d">
+            <p>Eins</p>
+            <p>Zwei</p>
+            <p>Drei</p>
+            <p>Vier</p>
+        </div>
+    </section>
+    <section>
+        <h1>align-self: center;<br>
+            justify-self: end;</h1>
+        <div class="e">
+            <p>Eins</p>
+            <p>Zwei</p>
+            <p>Drei</p>
+            <p>Vier</p>
+        </div>
+    </section>
+    <section>
+        <h1>place-self: center end;</h1>
+        <div class="f">
+            <p>Eins</p>
+            <p>Zwei</p>
+            <p>Drei</p>
+            <p>Vier</p>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
