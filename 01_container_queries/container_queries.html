@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Query</title>
+  <style>
+    body {
+      font-family: system-ui;
+      max-width: 100rem;
+      margin: auto;
+    }
+
+    .holder {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      align-items: start;
+      gap: 1rem;
+    }
+
+    aside {
+      background: orange;
+      padding: 1rem;
+    }
+
+    main {
+      background: orangered;
+      padding: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container {
+      container-type: inline-size;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+
+    }
+
+    @container (max-width: 30em) {
+      .card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Container Queries</h1>
+
+  <div class="holder">
+    <main>
+      <div class="container">
+        <div class="card">
+          <img src="https://placehold.co/600x400" alt="placeholder">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, minus.</p>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <div class="container">
+        <div class="card">
+          <img src="https://placehold.co/600x400" alt="Placeholder">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, minus.</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</body>
+
+</html>
