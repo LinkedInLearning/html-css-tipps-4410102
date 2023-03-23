@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farbverläufe</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div {
+            inline-size: 10rem;
+            aspect-ratio: 1;
+            border: 1px solid blue;
+            margin: 1rem;
+        }
+
+        .a {
+            background: linear-gradient(lightblue, blue);
+        }
+
+        .b {
+            background-image: linear-gradient(lightblue, blue, green, lightgreen);
+        }
+
+        .c {
+            background-image: linear-gradient(lightblue 10%, blue 10%, green 30%, lightgreen 50%);
+        }
+
+        .d {
+            background-image: linear-gradient(to right, lightblue 10%, blue 10%, green 30%, lightgreen 50%);
+        }
+
+        .e {
+            background-image: linear-gradient(-45deg, lightblue 10%, blue 10%, green 30%, lightgreen 50%);
+        }
+
+        .f {
+            background-image: radial-gradient(lightblue 10%, blue 10%, green 30%, lightgreen 50%);
+        }
+
+        .g {
+            background-image: conic-gradient(lightblue, blue, green, lightgreen);
+        }
+
+        .h {
+            background-image: conic-gradient(lightblue, blue, green, lightgreen, lightblue);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <div class="e"></div>
+    <div class="f"></div>
+    <div class="g"></div>
+    <div class="h"></div>
+</body>
+
+</html>

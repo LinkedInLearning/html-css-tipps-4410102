@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortendiagramm</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        div {
+         inline-size: 10rem;
+         aspect-ratio: 1;
+         border: 1px solid blue;
+         border-radius: 50%;
+         margin: 1rem;
+
+        }
+
+
+
+
+        .a {
+            background-image: conic-gradient(red 33%, yellow 33%, yellow 66%, blue 66%);
+            background-image: conic-gradient(red 33%, yellow 33% 66%, blue 66%);
+            background-image: conic-gradient(red 33%, yellow 0 66%, blue 0);
+        }
+
+        .b {
+            background-image: conic-gradient(red 180deg, yellow 0);
+        }
+
+        .c {
+            --grad: 230;
+            --gradwert: calc(var(--grad)*1deg);
+            background-image: conic-gradient(red var(--gradwert), yellow 0);
+           
+        }
+
+        .d {
+            --prozent: 65;
+            --prozentwert: calc(var(--prozent)*1%);
+            background-image: conic-gradient(red var(--prozentwert), yellow 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+
+</body>
+
+</html>
