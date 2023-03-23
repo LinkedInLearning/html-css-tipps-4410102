@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>gerade/ungerade Anzahl an Rasteritems</title>
     <style>
         .raster div {
             background-color: rgb(156, 30, 152);
@@ -16,6 +16,10 @@
             grid-template-columns: repeat(2, 6rem);
             grid-auto-rows: 6rem;
         }
+        .raster:has(:last-child:nth-child(odd)) > :first-child{
+            grid-column: span 2;
+        }
+       
       
     </style>
 </head>
