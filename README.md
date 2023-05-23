@@ -2,7 +2,7 @@
 
 Dies ist das Repository für den **LinkedIn Learning** Kurs `HTML und CSS – Tipps und Tricks: Jede Woche neu`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
-!HTML und CSS – Tipps und Tricks: Jede Woche neu[lil-thumbnail-url] 
+![HTML und CSS – Tipps und Tricks: Jede Woche neu][lil-thumbnail-url] 
 
 HTML und CSS sind die Kerntechnologien, die in jeder Website stecken. Mit ihrer Tipps-und-Tricks-Sammlung richtet sich Florence Maurice an alle Webdesigner:innen und Webentwickler:innen, die die Details kennenlernen und sich auch mit aktuellen Entwicklungen vertraut machen möchten bzw. müssen. Entdecken Sie Features wie Container Queries, die ein Komponenten basiertes Layout ermöglichen, oder neue Attribute in HTML, die bei der Performance-Optimierung helfen, und vieles mehr.
 
