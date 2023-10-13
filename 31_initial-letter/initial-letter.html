@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>initial-letter</title>
+    <style>
+        body {
+            max-width: 25rem;
+            margin: auto;
+            line-height: 1.4;
+            font-size: 150%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        p::first-letter {
+            -webkit-initial-letter: 4 3;
+            initial-letter: 4 3;
+            padding-right: .5rem;
+        }
+
+        /* @supports(initial-letter: 1 1) or (-webkit-initial-letter: 1 1) { 
+            
+        } */
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam pariatur laborum voluptatum illum porro magni
+        quibusdam incidunt fugiat aliquam, quasi officia? Possimus cumque vitae ex at modi? Nam distinctio est maxime
+        corporis repellendus, repudiandae magnam beatae ipsum voluptates soluta fugiat?</p>
+</body>
+
+</html>

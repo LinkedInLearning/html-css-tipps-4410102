@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color-mix</title>
+    <style>
+        div {
+            font-size: 200%;
+            padding: 2rem;
+            margin: 2rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .item1 {
+            background-color: color-mix(in srgb, red, yellow)
+        }
+
+        .item2 {
+            background-color: color-mix(in srgb, red 20%, yellow)
+        }
+
+        .item3 {
+            background-color: color-mix(in srgb, red 20%, yellow 80%)
+        }
+
+        .item4 {
+            background-color: color-mix(in hsl shorter hue,
+                    hsl(10 100% 50%),
+                    hsl(60 100% 50%))
+        }
+
+        .item5 {
+            background-color: color-mix(in hsl longer hue,
+                    hsl(10 100% 50%),
+                    hsl(60 100% 50%))
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item1">div</div>
+    <div class="item2">div</div>
+    <div class="item3">div</div>
+    <div class="item4">div</div>
+    <div class="item5">div</div>
+
+</body>
+
+</html>

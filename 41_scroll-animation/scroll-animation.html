@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scroll animation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+                "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+                "Helvetica Neue", sans-serif;
+            font-size: 1.4rem;
+            line-height: 1.4;
+            margin: 1rem;
+        }
+
+
+
+        @keyframes progress {
+            from {
+                transform: scaleX(0);
+            }
+
+            to {
+                transform: scaleX(1);
+                background-color: lightslategray;
+            }
+        }
+
+        #progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1rem;
+            transform-origin: left center;
+            background-color: lightcyan;
+            animation: linear progress forwards;
+            animation-timeline: scroll(root block);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="progress"></div>
+    <article>
+        <h2>Eins</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <h2>Zwei</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <h2>Drei</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <h2>Vier</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <h2>Fünf</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <h2>Sechs</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <h2>Sieben</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <p>
+        <h2>Acht</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+        tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+        ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <h2>Neun</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <h2>Zehn</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <h2>Elf</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <h2>Zwölf</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+    <article>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            tempora odit exercitationem sequi delectus aspernatur veritatis! Numquam
+            ullam aperiam, sit hic ex modi corporis.
+        </p>
+    </article>
+</body>
+
+</html>

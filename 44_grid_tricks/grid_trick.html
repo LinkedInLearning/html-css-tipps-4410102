@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            font-size: 150%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            gap: 1rem;
+            /* grid-template-columns:
+                repeat(auto-fit, minmax(450px, 1fr)); */
+            grid-template-columns:
+                repeat(auto-fit, minmax(min(450px, 100%), 1fr));
+
+
+
+        }
+
+        .container>* {
+            padding: 1rem;
+            border-radius: 1rem;
+            background: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>div</div>
+        <div>div</div>
+        <div>div</div>
+        <div>div</div>
+        <div>div</div>
+    </div>
+</body>
+
+</html>

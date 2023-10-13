@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subgrid</title>
+    <style>
+        html {
+            font: 100%/1.4 sans-serif;
+        }
+
+        .warnung {
+            background-color: pink;
+            padding: 1rem;
+            border-radius: .2rem;
+        }
+
+        @supports (grid-template-rows: subgrid) {
+            .warnung {
+                display: none;
+            }
+        }
+
+        .gridcontainer {
+            color: #33363a;
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+            gap: 1rem;
+        }
+
+        .produkt {
+            padding-top: 0.8rem;
+            border: 1px solid #cad0d2;
+            border-radius: 0.2rem;
+
+            grid-row: span 2;
+            display: grid;
+            grid-template-rows: subgrid;
+        }
+
+        .text {
+            color: #57727c;
+            padding: 0.2rem 0.4rem;
+        }
+
+        .preis {
+            color: #57727c;
+            font-weight: bold;
+            padding: 0.2rem 0.4rem;
+            border-top: 1px solid #d7dbdd;
+            background-color: #eef3f5;
+            text-align: center;
+            border-radius: 0 0 0.2rem 0.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="warnung">subgrid funktioniert leider in diesem Browser nicht. <a
+            href="https://caniuse.com/css-subgrid">https://caniuse.com/css-subgrid</a></p>
+    <div class="gridcontainer">
+        <div class="produkt">
+            <p class="text">Lorem ipsum</p>
+            <div class="preis">10 €</div>
+        </div>
+        <div class="produkt">
+            <p class="text">Lorem und so ipsum Lorem ipsum Lorem ipsum<br>Lorem ipsum</p>
+            <div class="preis">20 €</div>
+        </div>
+        <div class="produkt">
+            <p class="text">Lorem und so ipsum Lorem ipsum Lorem ipsum<br>Lorem ipsum</p>
+            <div class="preis">30 €</div>
+        </div>
+        <div class="produkt">
+            <p class="text">Lorem und so ipsum Lorem ipsum Lorem ipsum<br>Lorem ipsum</p>
+            <div class="preis">40 €</div>
+        </div>
+        <div class="produkt">
+            <p class="text">Lorem und so ipsum Lorem ipsum Lorem ipsum<br>Lorem ipsum</p>
+            <div class="preis" style="background-color: #E6A2BB">50 €<br>echt :)</div>
+        </div>
+        <div class="produkt">
+            <p class="text">Lorem und so ipsum Lorem ipsum Lorem ipsum<br>Lorem ipsum</p>
+            <div class="preis">60 €</div>
+        </div>
+        <div class="produkt">
+            <p class="text">Lorem und so ipsum Lorem ipsum Lorem ipsum<br>Lorem ipsum</p>
+            <div class="preis">70 €</div>
+        </div>
+    </div>
+</body>
+
+</html>

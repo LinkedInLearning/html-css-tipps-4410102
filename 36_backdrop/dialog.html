@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+    <style>
+        ::backdrop {
+            background-image: linear-gradient(red, yellow, blue)
+        }
+    </style>
+</head>
+
+<body>
+    <dialog id="dialogfenster">
+        <p>Weitere Informationen</p>
+        Das hier sind die gewünschten Informationen
+        <form method="dialog">
+            <button>ok</button>
+        </form>
+    </dialog>
+    <button id="infos">Mehr Infos</button>
+    <script>
+        const infoButton = document.getElementById('infos');
+        const dialogFenster = document.getElementById('dialogfenster');
+        infoButton.addEventListener('click', () => {
+            dialogFenster.showModal();
+        });
+    </script>
+</body>
+
+</html>

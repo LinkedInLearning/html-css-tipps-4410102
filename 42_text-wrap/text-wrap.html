@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-wrap</title>
+    <style>
+        .hinweis {
+            background-color: lightpink;
+            padding: 1rem;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            line-height: 1.3;
+            max-width: 28rem;
+            margin: auto;
+        }
+
+        h2 {
+            border-bottom: 1rem solid orange;
+            padding-bottom: 1rem;
+            text-align: left;
+            hyphens: auto;
+        }
+
+        .container {
+            padding: 1rem;
+            background: lightgoldenrodyellow;
+        }
+
+        @supports (text-wrap: balance) {
+            .hinweis {
+                display: none;
+            }
+        }
+
+        h1,
+        h2 {
+            text-wrap: balance;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="hinweis">Hinweis: text-wrap: balance wird in diesem Browser nicht unterstützt. Es geht
+        aber beispielsweise in Chrome ab Version 114.
+    </p>
+    <h1>Ausgeglichen: Bessere Überschrifte mit text-wrap: balance</h1>
+    <article class="container">
+        <h2>Morgenstund hat Gold im Mund und der superfrühe Vogel fängt den Wurm</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident distinctio illum architecto velit,
+            blanditiis voluptatum unde doloremque eveniet debitis beatae adipisci, deserunt sed nobis maiores minus
+            quaerat tempora optio quia!</p>
+    </article>
+    <article class="container">
+        <h2>Minikiwi, mexikanische Minigurke und Co.: Kleine Früchte für kleine Gärten</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed nulla quidem aspernatur exercitationem corporis
+            in beatae consectetur possimus eos necessitatibus.</p>
+    </article>
+    <article class="container">
+        <h2>Minikiwi, mexikanische Minigurke und Co.: Kleine Früchte für kleine Gärten - und weil es so schön ist:
+            Minikiwi, mexikanische Minigurke und Co.: Kleine Früchte für kleine Gärten - und weil es so schön ist:
+            Minikiwi, mexikanische Minigurke und Co.: Kleine Früchte für kleine Gärten</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed nulla quidem aspernatur exercitationem corporis
+            in beatae consectetur possimus eos necessitatibus.</p>
+    </article>
+
+</body>
+
+</html>

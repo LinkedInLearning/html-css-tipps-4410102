@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 300%;
+        }
+
+        .flexcontainer {
+            display: flex;
+            border: 1px solid slateblue;
+            max-width: 30rem;
+        }
+
+        .flexcontainer>* {
+            padding: 1rem;
+            border-radius: .5rem;
+            background-color: pink;
+        }
+
+        .flexcontainer>*:first-child {
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="flexcontainer">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+
+</html>

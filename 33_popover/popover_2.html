@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>popover</title>
+</head>
+
+<body>
+  <button popovertarget="mypopup-1" popovertargetaction="show">
+    Popover #1 anzeigen
+  </button>
+  <button popovertarget="mypopup-1" popovertargetaction="hide">
+    Popover #1 verstecken
+  </button>
+  <hr>
+  <button popovertarget="mypopup-2" popovertargetaction="show">
+    Popover #2 anzeigen
+  </button>
+  <button popovertarget="mypopup-2" popovertargetaction="hide">
+    Popover #2 verstecken
+  </button>
+  <!-- mit popover=manual können mehrere gleichzeitig geöffnet werden-->
+  <div id="mypopup-1" popover="manual">Popover #1</div>
+  <div id="mypopup-2" popover="manual">Popover #2 <br>!!!!</div>
+</body>
+
+</html>
