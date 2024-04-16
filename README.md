@@ -1,6 +1,6 @@
-# HTML und CSS – Tipps und Tricks: Jede Woche neu
+# HTML und CSS – Tipps und Tricks
 
-Dies ist das Repository für den **LinkedIn Learning** Kurs `HTML und CSS – Tipps und Tricks: Jede Woche neu`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
+Dies ist das Repository für den **LinkedIn Learning** Kurs `HTML und CSS – Tipps und Tricks`. Den gesamten Kurs finden Sie auf [LinkedIn Learning][lil-course-url].
 
 ![HTML und CSS – Tipps und Tricks: Jede Woche neu][lil-thumbnail-url] 
 
